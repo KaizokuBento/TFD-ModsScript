@@ -40,7 +40,8 @@
 		const TEMPLATES = { // all the new/changed HTML for the userscript
 			tfdAnnouncement			: `<div id="generalNotificationWrapperTFD" style="display: block;"><a id="close_general_notificationTFD">×</a><h5 class="border2 center" id="general_notificationTFD">Fri, Feb 15 @ 14:18:40 - Bento is cool.</h5></div>`,
 			tfdSettingsMenu			: `<div class="col-md-12" id="tfdsettingsmenuwrapper" style="display: none;"><div class="col-md-6"><h3 class="center nobg">TFD Settings</h3><table id="tfdsettingspage"><tbody><tr><td><label><input type="checkbox" class="tfdsetting" data-key="clan_notifications"/>Clan Announcements</label></td><tr><label><input type="checkbox" class="tfdsetting" data-key="clan_event_window"/>Clan Events</label></tr></tbody></table></div></div>`,
-			tfdExtraAdminButtons	: `<input id="tfd_normal_tax" type="button" value="Set normal tax"><input id="tfd_clan_day_tax" type="button" value="Set tax day tax">`
+			tfdExtraAdminButtons	: `<input id="tfd_normal_tax" type="button" value="Set normal tax"><input id="tfd_clan_day_tax" type="button" value="Set tax day tax">`,
+			tfdExtraDonationButtons	: `<input id="tfd_building_donations" type="button" value="Create Donation Page"><input id="tfd_start_taxday" type="button" value="Start Taxday"><input id="tfd_end_taxday" type="button" value="End Taxday">`,	
 		}
 
 		//Make the custom event window flash= style="animation: pulsate-inner 0.8s ease 0s infinite alternate none running;"
@@ -183,6 +184,9 @@
 					//Extra clan admin html
 					document.querySelector("#clan_mass_tax_change_submit").insertAdjacentHTML('beforebegin', TEMPLATES.tfdExtraAdminButtons);
 
+					//Extra Donationpage html
+					document.querySelector("#myClanDonationWrapper").insertAdjacentHTML('afterbegin', TEMPLATES.tfdExtraDonationButtons);
+
 				},
 				setupCSS() { // All the CSS changes are added here
 					GM_addStyle(TFD_STYLES);
@@ -263,7 +267,7 @@
 					$('#clan_all_exp_tax').val('15');
 					$('#clan_all_gold_tax').val('3');
 					$('#clan_all_res_tax').val('10');
-					$('#clan_all_drop_tax').val('11');
+					$('#clan_all_drop_tax').val('10');
 				},
 
 				adminTaxDayTax() { //Set ClanDay Tax
