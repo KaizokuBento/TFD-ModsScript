@@ -40,6 +40,7 @@
 		const TEMPLATES = { // all the new/changed HTML for the userscript
 			tfdAnnouncement		: `<div id="generalNotificationWrapperTFD" style="display: block;"><a id="close_general_notificationTFD">×</a><h5 class="border2 center" id="general_notificationTFD">Fri, Feb 15 @ 14:18:40 - Bento is cool.</h5></div>`,
 			tfdSettingsMenu		: `<div class="col-md-12" id="tfdsettingsmenuwrapper" style="display: none;"><div class="col-md-6"><h3 class="center nobg">TFD Settings</h3><table id="tfdsettingspage"><tbody><tr><td><label><input type="checkbox" class="tfdsetting" data-key="clan_notifications"/>Clan Announcements</label></td><tr><label><input type="checkbox" class="tfdsetting" data-key="clan_event_window"/>Clan Events</label></tr></tbody></table></div></div>`,
+			tfdExtraAdmin		: `<div class="mt10">Hello</div>`
 		}
 
 		//Make the custom event window flash= style="animation: pulsate-inner 0.8s ease 0s infinite alternate none running;"
@@ -180,7 +181,7 @@
 					document.querySelector("#viewedClanWrapper").insertAdjacentHTML('beforeend', TEMPLATES.tfdSettingsMenu);
 
 					//Extra clan admin html
-					document.querySelector("#myClanAdminWrapper").insertAdjacentHTML('beforeend', TEMPLATES.tfdSettingsMenu);
+					document.querySelector("#myClanAdminWrapper").insertAdjacentHTML('beforeend', TEMPLATES.tfdExtraAdmin);
 
 				},
 				setupCSS() { // All the CSS changes are added here
