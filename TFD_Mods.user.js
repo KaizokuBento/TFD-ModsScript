@@ -6,16 +6,8 @@
 // @author       Bento
 // @match        https://*.avabur.com/game*
 // @require      https://cdn.rawgit.com/omichelsen/compare-versions/v3.1.0/index.js
-// @require      https://rawgit.com/edvordo/roa-qol/master/common.js?rev=180730
-// @require      https://rawgit.com/ejci/favico.js/master/favico.js
-// @require      https://cdn.rawgit.com/omichelsen/compare-versions/v3.1.0/index.js
 // @require      https://raw.githubusercontent.com/lodash/lodash/4.17.4/dist/lodash.min.js
-// @require      https://cdn.rawgit.com/markdown-it/markdown-it/8.4.1/dist/markdown-it.min.js
-// @require      https://cdn.jsdelivr.net/npm/vue
-// @require      https://rawgit.com/ujjwalguptaofficial/JsStore/2.3.1/dist/jsstore.worker.min.js
-// @require      https://rawgit.com/ujjwalguptaofficial/JsStore/2.3.1/dist/jsstore.min.js
-// @require      https://cdnjs.cloudflare.com/ajax/libs/spectrum/1.8.0/spectrum.min.js
-// @updateURL    https://github.com/KaizokuBento/AvaTFD/raw/master/The_Flying_Dutchmen_Script.user.js
+// @updateURL    https://github.com/KaizokuBento/TFD-ModsScript/raw/dev/TFD-ModsScript.user.js
 // @grant        GM_xmlhttpRequest
 // @grant        GM_addStyle
 // @run-at       document-idle
