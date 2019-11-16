@@ -8,6 +8,7 @@
 // @require      https://cdn.rawgit.com/omichelsen/compare-versions/v3.1.0/index.js
 // @updateURL    https://github.com/KaizokuBento/AvaTFD/raw/master/The_Flying_Dutchmen_Script.user.js
 // @grant        GM_xmlhttpRequest
+// @grant        GM_addStyle
 // @run-at       document-idle
 // ==/UserScript==
 
