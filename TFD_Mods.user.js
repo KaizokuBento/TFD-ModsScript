@@ -264,9 +264,13 @@
 					$('#clan_all_gold_tax').val('3');
 					$('#clan_all_res_tax').val('10');
 					$('#clan_all_drop_tax').val('11');
-					
-					
-					
+				},
+
+				adminTaxDayTax() { //Set ClanDay Tax
+					$('#clan_all_exp_tax').val('90');
+					$('#clan_all_gold_tax').val('30');
+					$('#clan_all_res_tax').val('90');
+					$('#clan_all_drop_tax').val('50');
 				},
 
 			}, // end of API
@@ -295,6 +299,10 @@
 	
 	$(document).on('click', '#tfd_normal_tax', function () { //Set normal tax
         TFD.adminNormalTax();
+	});
+	
+	$(document).on('click', '#tfd_clan_day_tax', function () { //Set clan day tax
+        TFD.adminTaxDayTax();
     });
 
 })(jQuery);
