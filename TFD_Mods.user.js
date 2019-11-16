@@ -128,7 +128,7 @@
                             version   = match[1];
 
                             if (compareVersions(GM_info.script.version, version) < 0) {
-								let updateAnnouncement = '<div id="generalNotificationWrapperupdateTFD" style="display: block;"></a><h5 class="border2 center" id="general_notificationupdateTFD">The Flying Dutchmen Script has been updated to version ' + version + '! <a href=\"https://github.com/KaizokuBento/TFD-ModsScript/raw/dev/TFD-ModsScript.user.js\" target=\"_blank\">Update</a></h5></div>';
+								let updateAnnouncement = '<div id="generalNotificationWrapperupdateTFD" style="display: block;"></a><h5 class="border2 center" id="general_notificationupdateTFD">The Flying Dutchmen Script has been updated to version ' + version + '! <a href=\"https://api.github.com/repos/KaizokuBento/TFD-ModsScript/contents/TFD_Mods.user.js\" target=\"_blank\">Update</a></h5></div>';
 
 								document.querySelector("#contentWrapper").insertAdjacentHTML('afterbegin', updateAnnouncement);
                             } else {
