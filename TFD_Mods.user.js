@@ -278,7 +278,7 @@
 				},
 
 				buildingDonations() { //Start building donations
-					window.location.href = "https://docs.google.com/spreadsheets/d/1UtznwVp9d9YxKBwsw3w6vYRaFYo0vwKFtme43E8GbZ8/edit#gid=0";
+					window.location.href = "https://docs.google.com/spreadsheets/d/1UtznwVp9d9YxKBwsw3w6vYRaFYo0vwKFtme43E8GbZ8/edit#gid=0", "_blank";
 				},
 
 				taxDayDonations() { //Start Tax Day Donations
