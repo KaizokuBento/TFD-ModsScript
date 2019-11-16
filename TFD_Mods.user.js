@@ -258,6 +258,11 @@
 					$('#generalNotificationWrapperTFD').css({"display":"none"})
 				},
 
+				adminNormalTax() { //Set normal tax
+					//15 - 3 - 10 - 10
+					$('#clan_all_exp_tax').val('15');
+				},
+
 			}, // end of API
 		}; // end of fn
 
@@ -280,16 +285,10 @@
 
 	$(document).on('click', '#close_general_notificationTFD', function () { //Close clan announcement
         TFD.closeClanAnnouncement();
-    });
-
-
-
-	$(document).on('click', '#testeventbet', function () { //TEST event bet join
-		TFD.testJoinEventBet();
 	});
-
-	$(document).on('click', '#testannouncement', function () { //TEST Clan announcements
-        TFD.testAnnouncement();
+	
+	$(document).on('click', '#tfd_normal_tax', function () { //Set normal tax
+        TFD.adminNormalTax();
     });
 
 })(jQuery);
