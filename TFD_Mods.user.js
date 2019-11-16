@@ -41,7 +41,7 @@
 			tfdAnnouncement			: `<div id="generalNotificationWrapperTFD" style="display: block;"><a id="close_general_notificationTFD">×</a><h5 class="border2 center" id="general_notificationTFD">Fri, Feb 15 @ 14:18:40 - Bento is cool.</h5></div>`,
 			tfdSettingsMenu			: `<div class="col-md-12" id="tfdsettingsmenuwrapper" style="display: none;"><div class="col-md-6"><h3 class="center nobg">TFD Settings</h3><table id="tfdsettingspage"><tbody><tr><td><label><input type="checkbox" class="tfdsetting" data-key="clan_notifications"/>Clan Announcements</label></td><tr><label><input type="checkbox" class="tfdsetting" data-key="clan_event_window"/>Clan Events</label></tr></tbody></table></div></div>`,
 			tfdExtraAdminButtons	: `<input id="tfd_normal_tax" type="button" value="Set normal tax"><input id="tfd_clan_day_tax" type="button" value="Set tax day tax">`,
-			tfdExtraDonationButtons	: `<input id="tfd_building_donations" type="button" value="Create Donation Page"><input id="tfd_start_taxday" type="button" value="Start Taxday"><input id="tfd_end_taxday" type="button" value="End Taxday">`,	
+			tfdExtraDonationButtons	: `<input id="tfd_building_donations" type="button" value="Building Donations"><input id="tfd_tax_day" type="button" value="Taxday Donations">`,	
 		}
 
 		//Make the custom event window flash= style="animation: pulsate-inner 0.8s ease 0s infinite alternate none running;"
@@ -277,6 +277,13 @@
 					$('#clan_all_drop_tax').val('50');
 				},
 
+				buildingDonations() { //Start building donations
+					window.location.href = "https://docs.google.com/spreadsheets/d/1UtznwVp9d9YxKBwsw3w6vYRaFYo0vwKFtme43E8GbZ8/edit#gid=0";
+				},
+
+				taxDayDonations() { //Start Tax Day Donations
+					
+				},
 			}, // end of API
 		}; // end of fn
 
@@ -307,6 +314,15 @@
 	
 	$(document).on('click', '#tfd_clan_day_tax', function () { //Set clan day tax
         TFD.adminTaxDayTax();
-    });
+	});
+	
+	$(document).on('click', '#tfd_building_donations', function () { //Get building donations
+        TFD.buildingDonations();
+	});
+
+	$(document).on('click', '#tfd_tax_day', function () { //get Tax day donations
+        TFD.taxDayDonations();
+	});
+
 
 })(jQuery);
