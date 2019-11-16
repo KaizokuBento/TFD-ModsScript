@@ -181,7 +181,7 @@
 					document.querySelector("#viewedClanWrapper").insertAdjacentHTML('beforeend', TEMPLATES.tfdSettingsMenu);
 
 					//Extra clan admin html
-					document.querySelector("#clan_mass_tax_change_submit").insertAdjacentHTML('beforebegin', TEMPLATES.tfdExtraAdmin);
+					document.querySelector("#clan_mass_tax_change_submit").insertAdjacentHTML('beforebegin', TEMPLATES.tfdExtraAdminButtons);
 
 				},
 				setupCSS() { // All the CSS changes are added here
