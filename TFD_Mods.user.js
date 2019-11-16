@@ -126,7 +126,7 @@
                             version   = match[1];
 
                             if (compareVersions(GM_info.script.version, version) < 0) {
-								let updateAnnouncement = '<div id="generalNotificationWrapperupdateTFD" style="display: block;"></a><h5 class="border2 center" id="general_notificationupdateTFD">The Flying Dutchmen Script has been updated to version ' + version + '! <a href=\"https://github.com/KaizokuBento/AvaburTFD/raw/master/The_Flying_Dutchmen_Script.user.js\" target=\"_blank\">Update</a></h5></div>';
+								let updateAnnouncement = '<div id="generalNotificationWrapperupdateTFD" style="display: block;"></a><h5 class="border2 center" id="general_notificationupdateTFD">The Flying Dutchmen Script has been updated to version ' + version + '! <a href=\"https://github.com/KaizokuBento/TFD-ModsScript/raw/dev/TFD-ModsScript.user.js\" target=\"_blank\">Update</a></h5></div>';
 
 								document.querySelector("#contentWrapper").insertAdjacentHTML('afterbegin', updateAnnouncement);
                             } else {
@@ -178,6 +178,9 @@
 
 					//tfd Clan settings menu
 					document.querySelector("#viewedClanWrapper").insertAdjacentHTML('beforeend', TEMPLATES.tfdSettingsMenu);
+
+					//Extra clan admin html
+					document.querySelector("#myClanAdminWrapper").insertAdjacentHTML('beforeend', TEMPLATES.tfdSettingsMenu);
 
 				},
 				setupCSS() { // All the CSS changes are added here
