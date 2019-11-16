@@ -173,17 +173,12 @@
                 },
 
 				setupHTML() { // injects the HTML changes from TEMPLATES into the site
-					//TESTmenu
-					document.querySelector('#helpSection').insertAdjacentHTML('beforeend', '<li id="testannouncement"><a>Test Announcement</a></li><li id="testeventbet"><a>Test Eventbet</a></li>');
-
 					//tfd Clan settings menu link
 					document.querySelector("#myClanLinks").insertAdjacentHTML('beforeend', ' · <a id="tfdviewsettingsmenu">TFD Script</a>');
 
 					//tfd Clan settings menu
 					document.querySelector("#viewedClanWrapper").insertAdjacentHTML('beforeend', TEMPLATES.tfdSettingsMenu);
 
-					//tfd Event Window
-					document.querySelector('#navWrapper').insertAdjacentHTML('beforeend', TEMPLATES.tfdEventQuestWindow);
 				},
 				setupCSS() { // All the CSS changes are added here
 					GM_addStyle(TFD_STYLES);
