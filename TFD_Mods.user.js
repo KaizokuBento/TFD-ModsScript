@@ -261,6 +261,12 @@
 				adminNormalTax() { //Set normal tax
 					//15 - 3 - 10 - 10
 					$('#clan_all_exp_tax').val('15');
+					$('#clan_all_gold_tax').val('3');
+					$('#clan_all_res_tax').val('10');
+					$('#clan_all_drop_tax').val('10');
+					
+					
+					
 				},
 
 			}, // end of API
