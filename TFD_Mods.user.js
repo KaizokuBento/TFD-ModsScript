@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         The Flying Dutchmen Mods Script
 // @namespace    http://tampermonkey.net/
-// @version      0.1
+// @version      0.2
 // @description  A userscript for the moderators of The Flying Dutchmen clan in Avabur.
 // @author       Bento
 // @match        https://*.avabur.com/game*
