@@ -281,11 +281,14 @@
 					window.open(
 						'https://docs.google.com/spreadsheets/d/1UtznwVp9d9YxKBwsw3w6vYRaFYo0vwKFtme43E8GbZ8/edit#gid=0',
 						'_blank'
-					  );
+					);
 				},
 
 				taxDayDonations() { //Start Tax Day Donations
-					
+					window.open(
+						'https://docs.google.com/spreadsheets/d/1hHl4DdA-E3vxEX4zQThKntkSc1TNEaj3ghbgYmUhcvY/edit?usp=sharing',
+						'_blank'
+					);
 				},
 			}, // end of API
 		}; // end of fn
